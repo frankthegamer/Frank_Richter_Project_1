@@ -1,0 +1,182 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #cad5e3;
+  margin: 0;
+  color: #2c3e50;
+}
+
+/* Header */
+header {
+  background: #3498db;
+  padding: 0.75rem 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Nav container */
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 24px;       
+  flex-wrap: wrap;
+}
+
+/* Nav links styled as buttons */
+.nav .button {
+  background: rgb(10, 111, 189);   
+  border: 2px solid white;
+  color: white;
+  font-size: 16px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.5s ease, transform 0.05s ease;
+  text-decoration: none;
+}
+
+/* Hover effect */
+.nav .button:hover {
+  background-color: rgba(20, 0, 131, 0.586); 
+}
+
+/* Active press */
+.nav .button:active {
+  transform: translateY(5px);
+}
+
+/* Main container */
+.container {
+  max-width: 1110px;
+  margin: 40px auto;
+  padding: 0 16px;
+  position: relative;
+}
+
+/* Cards */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card.intro-card {     
+  margin: 0 0 20px 0;    
+  padding: 14px 18px;     
+  display: flex;          
+  align-items: flex-start;    
+  gap: 16px;              
+}
+
+.card.intro-card .photo {
+  margin: 10px 0 0 0;
+  width: 100x;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.card.intro-card .photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     
+  display: block
+}
+
+.card.intro-card .info {
+  flex: 1;                
+  margin: 0;              
+}
+
+
+/* Education/ Hobbies cards */
+.education-card .edu-content {
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.education-card .edu-left,
+.education-card .edu-right {
+  display: flex;
+  flex-direction: column;              
+}
+
+.education-card .edu-left .photo {
+  width: 120px;       
+  height: 120px;      
+  overflow: hidden;   
+  flex-shrink: 0;     
+}
+
+.education-card .edu-left .photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;
+}
+
+.education-card .edu-right h3 {
+  margin: 0 0 6px 0;  
+  font-size: 1.2rem;  
+}
+
+.education-card .edu-right p {
+  margin: 0;          
+  line-height: 1.4;
+}
+
+.education-card .divider {
+  width: 1px;
+  background-color: #616d7995;
+  margin: 0px 25px;
+  align-self: stretch;
+}
+
+/* Titles */
+
+h1 {
+  margin: 0 0 6px;
+}
+
+.subtitle {
+  color: rgb(58, 58, 58);
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 30px 0 10px;
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+
+.logo-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px; 
+  height: 50px;
+  padding-right: 10px;  
+  border-right: 4px solid #033e86;  /* vertical line */
+  box-sizing: content-box;
+}
+
+.company-logo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Links */
+a.profile-link {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a.profile-link:hover {
+  text-decoration: underline;
+}
